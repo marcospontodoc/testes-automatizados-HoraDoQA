@@ -1,0 +1,23 @@
+{
+  "name": "testes-automatizados-horadoqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcospontodoc/testes-automatizados-HoraDoQA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marcospontodoc/testes-automatizados-HoraDoQA/issues"
+  },
+  "homepage": "https://github.com/marcospontodoc/testes-automatizados-HoraDoQA#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  }
+}
