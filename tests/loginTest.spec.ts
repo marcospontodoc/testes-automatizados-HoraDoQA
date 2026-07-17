@@ -18,4 +18,19 @@ test.describe('Login Tests', () => {
         await expect(loginPage.warningMessage).toHaveText(/E-mail ou senha inválidos!/);
     });
 
+    test('Login com senha inválida', async ({page}) => {
+        await loginPage.login('usuario@example.com', 'senhainvalida');
+        await expect(loginPage.warningMessage).toHaveText(/E-mail ou senha inválidos!/);
+    });
+
+    test('Login com e-mail vazio', async ({page}) => {
+        await loginPage.login('', '1q2w3e4r');
+        await expect(loginPage.warningMessage).toHaveText(/E-mail e senha são obrigatórios!/);
+    });
+    
+    test('Login com senha vazia', async ({page}) => {
+        await loginPage.login('usuario@example.com', '');
+        await expect(loginPage.warningMessage).toHaveText(/E-mail e senha são obrigatórios!/);
+    });
+
 });
