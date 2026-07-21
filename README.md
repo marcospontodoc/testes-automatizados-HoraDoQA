@@ -347,5 +347,3 @@ npx playwright test --debug
 
 ---
 
-
-Estudante de Análise e Desenvolvimento de Sistemas e estagiário em Quality Assurance (QA), com foco em testes manuais, automação de testes, validação de APIs e integração contínua.
